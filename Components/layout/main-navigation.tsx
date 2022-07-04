@@ -1,13 +1,13 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-// components 
-import Logo from './logo';
-import classes from '../../styles/layout/main-navigation.module.css';
+// components
+import Logo from "./logo";
+import classes from "../../styles/layout/main-navigation.module.css";
 
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <Link href='/'>
+      <Link href="/">
         <a>
           <Logo />
         </a>
@@ -15,10 +15,12 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href='/posts'>Posts</Link>
+            <Link href="/posts">
+              <a>Posts</a>
+            </Link>
           </li>
           <li>
-            <Link href='/contact'>Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
